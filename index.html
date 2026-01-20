@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pizza Palace - Order Online</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">🍕 Pizza Palace</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#order">Order</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-text">
+      <h2>Delicious Pizza Delivered Hot & Fresh!</h2>
+      <p>Choose from a wide variety of handcrafted pizzas.</p>
+      <a href="#order" class="btn">Order Now</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <h2 class="section-title">🍽️ Our Pizza Menu</h2>
+      <div class="pizza-grid">
+        <div class="pizza-card">
+          <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGl6emElMjBzbGljZXxlbnwwfHwwfHx8MA%3D%3D" alt="Pepperoni Pizza">
+          <h3>Pepperoni Deluxe</h3>
+          <p>Classic pepperoni with mozzarella and tomato sauce.</p>
+        </div>
+        <div class="pizza-card">
+          <img src="https://images6.alphacoders.com/698/698287.jpg" alt="Veggie Pizza">
+          <h3>Garden Veggie</h3>
+          <p>A healthy mix of bell peppers, onions, olives & mushrooms.</p>
+        </div>
+        <div class="pizza-card">
+          <img src="https://rukminim2.flixcart.com/image/480/480/kxgfzbk0/wall-decoration/d/q/e/food-pizza-wallpaper-paper-poster-1-vp-221221-617-poster-smoky-original-imag9wjrxfzzhrpd.jpeg?q=90" alt="Cheese Pizza">
+          <h3>Cheese Burst</h3>
+          <p>Extra cheesy for cheese lovers with a crispy crust.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Section -->
+  <section class="order" id="order">
+    <div class="container">
+      <h2 class="section-title">🛒 Place Your Order</h2>
+      <form class="order-form">
+        <label for="pizza">Choose Pizza:</label>
+        <select id="pizza" name="pizza">
+          <option value="pepperoni">Pepperoni Deluxe</option>
+          <option value="veggie">Garden Veggie</option>
+          <option value="cheese">Cheese Burst</option>
+        </select>
+
+        <label for="size">Size:</label>
+        <select id="size" name="size">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+        </select>
+
+        <label for="address">Delivery Address:</label>
+        <input type="text" id="address" name="address" placeholder="123 Pizza Street" required>
+
+        <button type="submit" class="btn">Confirm Order</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <h2 class="section-title">⭐ Customer Reviews</h2>
+      <div class="review-grid">
+        <div class="review">
+          <p>"Best pizza in town! Always fresh and hot!"</p>
+          <h4>- Sarah M.</h4>
+        </div>
+        <div class="review">
+          <p>"Love the veggie pizza! Great options and fast delivery."</p>
+          <h4>- Alex R.</h4>
+        </div>
+        <div class="review">
+          <p>"Excellent customer service and mouth-watering taste!"</p>
+          <h4>- Priya D.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Pizza Palace. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

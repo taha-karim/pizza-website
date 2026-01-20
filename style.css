@@ -1,0 +1,262 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f8f8f8;
+  color: #222;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  padding: 1.2em 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+/* align in one line */
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 2em;
+  color: #e65100;
+  letter-spacing: 1px;
+  margin: 0;
+  display: inline-block;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #e65100;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(230,81,0,0.7), rgba(255,152,0,0.7)),center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 8px 32px rgba(230,81,0,0.12);
+  margin-bottom: 2em;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  padding: 2em 1em;
+}
+
+.hero h2 {
+  font-size: 2.7em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 1.3em;
+  margin-bottom: 1.5em;
+  font-weight: 300;
+}
+
+.btn, .btn-hero {
+  background: linear-gradient(90deg, #ff9800 0%, #e65100 100%);
+  color: #fff;
+  padding: 0.9em 2.2em;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(230,81,0,0.15);
+  transition: background 0.2s, transform 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover, .btn-hero:hover {
+  background: linear-gradient(90deg, #e65100 0%, #ff9800 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Menu Section */
+.menu {
+  padding: 3em 0 2em 0;
+}
+
+.section-title {
+  font-size: 2em;
+  color: #e65100;
+  margin-bottom: 1.5em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.pizza-grid {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pizza-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(230,81,0,0.08);
+  padding: 1.5em 1em;
+  width: 270px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pizza-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(230,81,0,0.16);
+}
+
+.pizza-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1em;
+}
+
+.pizza-card h3 {
+  color: #e65100;
+  margin: 0.5em 0 0.3em 0;
+  font-size: 1.3em;
+}
+
+.pizza-card p {
+  color: #555;
+  font-size: 1em;
+}
+
+/* Order Section */
+.order {
+  background: #fff3e0;
+  padding: 3em 0 2em 0;
+  border-radius: 32px;
+  margin: 2em 0;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.order-form label {
+  font-weight: 500;
+  color: #e65100;
+}
+
+.order-form select,
+.order-form input[type="text"] {
+  padding: 0.7em;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  font-size: 1em;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.order-form select:focus,
+.order-form input[type="text"]:focus {
+  border: 1.5px solid #e65100;
+}
+
+/* Reviews Section */
+.reviews {
+  padding: 3em 0 2em 0;
+}
+
+.review-grid {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(230,81,0,0.08);
+  padding: 1.5em 1.2em;
+  width: 270px;
+  text-align: center;
+}
+
+.review p {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 1em;
+}
+
+.review h4 {
+  color: #e65100;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  background: #fff;
+  padding: 1.5em 0;
+  text-align: center;
+  color: #888;
+  font-size: 1em;
+  border-top: 1px solid #eee;
+  margin-top: 2em;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .pizza-grid, .review-grid, .container, .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pizza-card, .review {
+    width: 90%;
+  }
+  .hero h2 {
+    font-size: 2em;
+  }
+}
